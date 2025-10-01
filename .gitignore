@@ -1,0 +1,80 @@
+# NHS Wales - Git Repository Template .gitignore
+# Ensure sensitive NHS data is never committed
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+
+# Configuration files with secrets
+config/secrets.*
+config/database.json
+config/production.json
+
+# NHS specific sensitive files
+*patient*
+*nhs-number*
+*medical-record*
+*.patient
+*.nhs
+
+# Certificates and keys
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Log files
+*.log
+logs/
+log/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# IDE files
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+dist/
+build/
+node_modules/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Compliance reports (may contain sensitive info)
+compliance-report.json
+security-scan-results.sarif
+
+# Local development files
+.local/
+local/
